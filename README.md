@@ -1,2 +1,4 @@
 # GitCourse
 zerocourse
+
+# project note
