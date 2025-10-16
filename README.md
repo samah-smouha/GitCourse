@@ -3,7 +3,7 @@ Git course repositoy for tutorial
 
 Hello git cource 
 
-#this is exemple repooo
+#this is exemple pushh branch repooo
 
 #this repoo
 this repository is built tep by step 
