@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Hotel</groupId>
+    <artifactId>Hotel</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <build>
+        <sourceDirectory>Hotel_/src</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>Hotel_/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- 🔹 Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <!-- Target Java LTS 21 -->
+                    <release>21</release>
+                </configuration>
+            </plugin>
+
+            <!-- 🔹 SonarQube Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ✅ Dependencies -->
+    <dependencies>
+
+        <!-- ✅ SwingX (AutoCompleteDecorator, etc.) -->
+        <dependency>
+            <groupId>org.swinglabs.swingx</groupId>
+            <artifactId>swingx-all</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+
+        <!-- ✅ JCalendar -->
+        <dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <!-- ✅ DbUtils -->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.8.1</version>
+        </dependency>
+
+        <!-- ✅ Joda-Time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.12.7</version>
+        </dependency>
+
+        <!-- ✅ rs2xml (TableModel from ResultSet) -->
+     <dependency>
+  <groupId>net.proteanit</groupId>
+  <artifactId>rs2xml</artifactId>
+  <version>1.0</version>
+</dependency>
+
+    </dependencies>
+
+    <!-- ✅ مستودعات إضافية -->
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+</project>
+
